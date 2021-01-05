@@ -1,6 +1,7 @@
 import json
 
-def __init__(self, filepath):
+class OrdersController:
+	def __init__(self, filepath):
 		print('__init__')
 
 		self.filepath = filepath

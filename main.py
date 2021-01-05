@@ -14,9 +14,11 @@ bot = TeleBot(token)
 @bot.message_handler(commands=['start'])
 def start_message(message):
     text = message.text.split(' ')
+    # /start
+    # /start 43439590
 
     ref = 0
-    if len(text) == 2:
+    if len(text) == 2: 
         try:
             ref = int(text[1])
         except:
